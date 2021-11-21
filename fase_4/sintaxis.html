@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>SINTAXIS Y SELECTORES CSS </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Inicio</a></li>
+            <li>Temas
+                <ul>
+                    <li><a href="sintaxis.html">Sintaxis</a></li>
+                    <li><a href="selectores.html">Selectores</a></li>
+                </ul>
+            </li>
+            <li>Recurso Digitales</li>
+                <ul>
+                    <li><a href="recurso1.html">Recurso 1</a></li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>    
+                </ul>
+            <li>Aprendizaje</li>
+            <ul>
+                <li><a href="Evaluacion1.html">Evaluacion Sintaxis</a></li>
+                <li><a href="Evaluacion2.html">Evaluacion Selectores</a></li>    
+            </ul>
+            <li><a href="autor.html">Acerca de Jhonattan Valdes</a></li>
+        </ul>
+    </nav>
+    <main>
+<section>
+    <article>
+    <h3>SINTAXIS</h3>
+     <br>
+     <img src="img/Sintaxis.png" alt="Imagen de sintaxis">
+         <p>
+            La meta básica del lenguaje Cascading Stylesheet (CSS) es permitir al motor del navegador pintar elementos de la página con características específicas, como colores, posición o decoración. La sintaxis CSS refleja estas metas y estos son los bloques básicos de construcción
+
+            La propiedad que es un identificador, un nombre leíble por humanos, que define qué característica es considerada.
+            El valor que describe como las características deben ser manejadas por el motor. Cada propiedad tiene un conjunto de valores válidos, definido por una gramática formal, así como un significado semántico, implementados por el motor del navegador.
+            <h6>Declaraciones</h6>
+            Una propiedad y su valor son llamados una declaración, y cualquier motor de CSS calcula qué declaraciones aplican a cada uno de los elementos de una página para mostralos apropiadamente y estilizarlos.
+            Ambos propiedades y valores son sensibles a mayúculas y minúsculas en CSS. El par se separa por dos puntos, ':' (U+003A COLON), y los espacios en blanco antes, entre ellos y después, pero no necesariamente dentro de ellos, son ignorados.   
+       <img src="img/Declaraciones.jpg" alt="">
+       <h6>Bloques de declaración</h6>
+       Esos bloques son naturalmente llamados bloques de declaraciones y las declaraciones dentro de ellos están separadas por un punto y coma, ';' (U+003B SEMICOLON). Un bloque de declaración puede estar vacío, que es contener una declaración nula. Los espacios en blanco alrededor de las declaraciones son ignorados. En cuanto a la última declaración de un bloque, esta no necesita terminar en un punto y coma, aunque es usualmente considerado una buena práctica porque previene el olvidar agregarlo cuando se extienda el bloque con otra declaración.
+       <img src="img/Bloques.jpg" alt="">
+       <h6>Sets de reglas</h6>
+                    CSS permite esto asociando condiciones con bloques de declaraciones. Cada declaración (válida) es precedida por un selector, es decir, una condición que selecciona algunos elementos de la página. El bloque que forma el par selector-declaraciones recibe el nombre de set de reglas, o simplemente una regla. 
+                    Debido a que un elemento de la página puede ser seleccionado por varios selectores, y, por lo tanto, por varias reglas que pueden contener la misma propiedad más de una vez, con diferentes valores, el estandar CSS define cuál regla tiene precedencia por sobre las otras y debe ser aplicada: esto se conoce como el algoritmo cascada.<br>
+<img src="img/Set de reglas.jpg" alt="">
+Referencias: Sintaxis,2021, Recuperado de;  <a href="#">https://developer.mozilla.org/es/docs/Web/CSS/Syntax</a> > 
+        </p>
+
+    </article>
+</section>
+<aside>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    
+</aside>
+
+    </main>
+    <hr>
+    <footer>
+        <p>
+            Correo: jevaldesi@unad.edu.co <br>
+            Skype: estivenizquierdo@gmail.com <br>
+            Fecha: septimebre del 2021 
+        </p>
+    </footer>
+
+</body>
+</html>

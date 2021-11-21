@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>SINTAXIS Y SELECTORES </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Inicio</a></li>
+            <li>Temas
+                <ul>
+                    <li><a href="sintaxis.html">Sintaxis</a></li>
+                    <li><a href="selectores.html">Selectores</a></li>
+                </ul>
+            </li>
+            <li>Recurso Digitales</li>
+                <ul>
+                    <li><a href="recurso1.html">Recurso 1</a></li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>    
+                </ul>
+            <li>Aprendizaje</li>
+            <ul>
+                <li><a href="Evaluacion1.html">Evaluacion Sintaxis</a></li>
+                <li><a href="Evaluacion2.html">Evaluacion Selectores</a></li>    
+            </ul>
+            <li><a href="autor.html">Acerca de Jhonattan Valdes</a></li>
+        </ul>
+    </nav>
+    <main>
+<section>
+    <article>
+        <h3>SELECTORES</h3>
+        <img src="img/Selectores.png" alt="">
+         <p>
+            Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.<br>
+
+            <h4>Selectores básicos</h4>
+           <h5> Selector de tipo</h5>
+                <li> Selecciona todos los elementos que coinciden con el nombre del elemento especificado.<br>
+                <li> Sintaxis: eltname<br>
+                <li> Ejemplo: input se aplicará a cualquier elemento input.<br>
+            <h5>Selector de clase</h5>
+                <li>    Selecciona todos los elementos que tienen el atributo de class especificado.<br>
+                <li>    Sintaxis: .classname<br>
+                <li>Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index".<br>
+            <h5>Selector de ID</h5>
+                <li>   Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.<br>
+                <li>    Sintaxis: #idname<br>
+                <li>   Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".<br>
+            <h5>Selector universal</h5>
+                <li>   Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.<br>
+                <li>    Sintaxis: * ns|* *|*<br>
+                <li>    Ejemplo: * se aplicará a todos los elementos del documento.<br>
+            <h5>Selector de atributo</h5>
+                <li>   Selecciona elementos basándose en el valor de un determinado atributo.<br>
+                <li>   Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]<br>
+                <li>  Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).<br>
+            <h4>Combinadores</h4>
+           <h5> Combinador de hermanos adyacentes</h5>
+                <li> El combinador + selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al primero y ambos comparten el mismo elemento padre.<br>
+                <li> Sintaxis: A + B<br>
+                <li>  Ejemplo: La regla h2 + p se aplicará a todos los elementos p que siguen directamente a un elemento h2>.<br>
+            <h5> Combinador general de hermanos</h5>
+                <li>   El combinador ~ selecciona hermanos. Esto quiere decir que el segundo elemento sigue al primero (no necesariamente de forma inmediata) y ambos comparten el mismo elemento padre.<br>
+                <li>  Sintaxis: A ~ B<br>
+                <li>   Ejemplo: La regla p ~ span se aplicará a todos los elementos span que siguen un elemento p.<br>
+            <h5> Combinador de hijo</h5>
+                <li> El combinador > selecciona los elementos que son hijos directos del primer elemento.<br>
+                <li>  Sintaxis: A > B<br>
+                <li>  Ejemplo: La regla ul > li se aplicará a todos los elementos li que son hijos directos de un elemento ul.<br>
+            <h5> Combinador de descendientes</h5>
+                 <li> El combinador   (espacio) selecciona los elementos que son descendientes del primer elemento.<br>
+                 <li>Sintaxis: A B<br>
+                 <li>Ejemplo: La regla div span se aplicará a todos los elementos <span> que están dentro de un elemento div.<br>
+            <h5> Combinador de columna</h5>
+                <li>  El combinador || selecciona los elementos especificados pertenecientes a una columna.<br>
+                <li> Sintaxis: A || B<br>
+                <li> Ejemplo: col || td seleccionará todos los elementos <td> que pertenezcan al ámbito de col.<br>
+
+            <h5>Pseudoclases</h5>
+                <li>Las pseudoclases permiten la selección de elementos, basada en información de estado que no está contenida en el árbol de documentos.<br>
+                <li>Ejemplo: La regla a:visited se aplicará a todos los elementos <a> que hayan sido visitados por el usuario.<br>
+            <h5>Pseudoelementos</h5>
+                Los pseudoelementos son abstracciones del árbol que representan entidades más allá de los elementos HTML. Por ejemplo, HTML no tiene un elemento que describa la primera letra de un párrafo ni los marcadores de una lista. Los pseudoelementos representan estas entidades y nos permiten asignarles reglas CSS. De este modo podemos diseñar estas entidades de forma independiente.<br>
+                Ejemplo: La regla p::first-line se aplicará a la primera línea de texto de todos los elementos <p>.<br>
+                    Referencias: Selectores CSS,2021, Recuperado de;  <a href="#">https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors</a> >
+        </p>
+
+    </article>
+</section>
+<aside>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    
+</aside>
+
+    </main>
+    <hr>
+    <footer>
+        <p>
+            Correo: jevaldesi@unad.edu.co <br>
+            Skype: estivenizquierdo@gmail.com <br>
+            Fecha: septimebre del 2021 
+        </p>
+    </footer>
+
+</body>
+</html>
